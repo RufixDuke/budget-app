@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6b22ab11f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Budgety</title>
+</head>
+<body>
+    <div class="container">
+        <div class="section-top">
+            <p class="header">Available Budget in September 2016</p>
+            <span id="budget">+ 0.00</span>
+
+            <div class="income-container">
+                <p>INCOME</p>
+                <div>
+                    <span id="income">0.00</span>
+                    +
+                </div>
+            </div>
+            <div class="expense-container">
+                <p>EXPENSES</p>
+                <div>
+                    <span id="expense">0.00</span>
+                    -
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section-bottom">
+            <div class="top">
+                <select id="addSub" class="addSub">
+                    <option value="Add" id="add">+</option>
+                    <option value="Subtract" id="subtract">-</option>
+                </select>
+                
+                <input type="text" placeholder="Add description" id="desc">
+
+                <input type="number" placeholder="Value" id="price">
+
+                <button type="button" class="btn">
+                    <i class="far fa-check-circle"></i>
+                </button>
+            </div>
+            
+            <div class="entry-values">
+                <section class="left">
+                    <h3>INCOME</h3>   
+                </section>
+
+                <section class="right">
+                    <h3>EXPENSES</h3>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

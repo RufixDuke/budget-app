@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Muli", sans-serif;
+    height: 120vh;
+    margin: 0;
+    overflow: scroll;
+}
+
+.section-top {
+    background: url(/windows-ACWCQs6KXcw-unsplash.jpg);
+    display: block;
+    text-align: center;
+    height: 40vh;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+}
+
+.header {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 10px;
+}
+
+.income-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 10px;
+    background: rgb(92, 129, 165);
+    margin: 10px;
+}
+
+.income-container p {
+    color: black;
+    font-size: 10px;
+}
+
+.income-container div {
+    margin-left: 30px;
+}
+
+.expense-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 0;
+    background: rgb(243, 71, 13);
+    margin: 10px;
+}
+
+.expense-container p {
+    color: black;
+    font-size: 10px;
+}
+.expense-container div {
+    margin-left: 30px;
+}
+
+.section-bottom {
+    text-align: center;
+    height: 60vh;
+    color: white;
+}
+
+.top {
+    background-color: rgb(228, 222, 222);
+    padding: 12px;
+}
+
+select {
+    padding: 2px;
+    border-radius: 2px;
+    border: 0;
+    background-color: white;
+}
+select:active {
+    outline: 0;
+}
+
+select:focus {
+    outline: 0;
+}
+
+input {
+    padding: 7px;
+    border-radius: 3px;
+    border: 0;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.btn {
+    background-color: inherit;
+    color: green;
+    border: 0;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.btn:active {
+    transform: scaleY(0.7);
+}
+
+@media (max-width: 600px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    select {
+        margin-bottom: 10px;
+        width: 35px;
+        position: relative;
+        left: 45%;
+    }
+
+    input {
+        margin-bottom: 10px;
+        width: 50%;
+        position: relative;
+        left: 25%;
+    }
+}
+
+.entry-values {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    color: rgb(92, 129, 165);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.deleteBtn {
+    display: inline;
+    background-color: inherit;
+    border: 0;
+    color: rgb(92, 129, 165);
+}
+
+.deleteBtn:active {
+    display: inline;
+}
+
+.right {
+    color: rgb(243, 71, 13);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-values .span {
+    display: block;
+}
+
+.left span {
+    margin: 5px;
+    border: 0;
+    padding: 6px 20px;
+    background-color: rgb(243, 234, 217);
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left span i {
+    color: rgb(92, 129, 165);
+    position: relative;
+    left: 30%;
+}
+
+.left span i:active {
+    transform: scaleX(0.9);
+}
+
+#income-value {
+    display: block;
+}
+
+#expense-value {
+    display: block;
+}
+
+.right span {
+    margin: 5px;
+    border: 0;
+    padding: 6px 20px;
+    background-color: rgb(243, 234, 217);
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right span i {
+    color: rgb(92, 129, 165);
+    position: relative;
+    left: 30%;
+}
+
+.right span i:active {
+    transform: scaleX(0.9);
+}
