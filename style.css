@@ -111,27 +111,6 @@ input:focus {
     transform: scaleY(0.7);
 }
 
-@media (max-width: 600px) {
-    .top {
-        display: flex;
-        flex-direction: column;
-    }
-
-    select {
-        margin-bottom: 10px;
-        width: 35px;
-        position: relative;
-        left: 45%;
-    }
-
-    input {
-        margin-bottom: 10px;
-        width: 50%;
-        position: relative;
-        left: 25%;
-    }
-}
-
 .entry-values {
     margin-top: 10px;
     display: flex;
@@ -213,4 +192,60 @@ input:focus {
 
 .right span i:active {
     transform: scaleX(0.9);
+}
+
+
+@media (max-width: 600px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    select {
+        margin-bottom: 10px;
+        width: 35px;
+        position: relative;
+        left: 45%;
+    }
+
+    input {
+        margin-bottom: 10px;
+        width: 50%;
+        position: relative;
+        left: 25%;
+    }
+
+    .left span i {
+    position: relative;
+    left: 15%;
+    }
+
+    .right span i {
+    position: relative;
+    left: 15%;
+    }
+    
+    .entry-values {
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .left span {
+    padding: 6px 10px;
+    }
+
+    .left h3 {
+        position: relative;
+        left: 10%;
+    }
+
+    .right span {
+    padding: 6px 10px;
+    }
+
+    .right h3 {
+        position: relative;
+        right: 10%;
+    }
 }
