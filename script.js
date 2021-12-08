@@ -16,7 +16,7 @@ btn.addEventListener('click', function() {
     var text = addSub.options[addSub.selectedIndex].text;
 
 
-    if(text == "+"){
+    if(text == "Income"){
         
         income.textContent = parseInt(income.textContent) + parseInt(price.value);
         budget += parseInt(price.value);
