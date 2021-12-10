@@ -4,10 +4,11 @@ const expense = document.getElementById("expense");
 const btn = document.querySelector(".btn");
 const addSub = document.getElementById("addSub");
 var incomeLeft = document.querySelector(".left");
+var newDate = document.querySelector(".newDate");
 
+newDates();
 
 let budget = parseInt(0);
-
 
 btn.addEventListener('click', function() {
     var price = document.getElementById('price');
@@ -87,4 +88,20 @@ function addExpenseDetails(desc, price){
     });
 
     window.num++
+}
+
+function newDates() {
+    var todayDate, months, currentMonth, currentYear;
+
+    todayDate = new Date();
+
+    months = ['January', 'February', 'March', 'April', 'May',
+'June', 'July', 'August', 'September', 'October', 'November',
+'December'];
+
+    currentMonth = todayDate.getMonth();
+
+    currentYear = todayDate.getFullYear();
+
+    newDate.textContent = months[currentMonth] + ' ' + currentYear;
 }
